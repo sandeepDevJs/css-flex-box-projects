@@ -248,9 +248,23 @@ input::-moz-focus-inner {
     display: flex;
     border: 10px solid goldenrod;
     min-height: 100vh;
+    /* Default row has main axix from left to right and cross axis from top to bottom */
     /* flex-direction: row; */
+
     /* flex-direction: column; */
     /* flex-direction: row-reverse; */
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
 
+    /* default wrap */
+    /* flex-wrap: nowrap; */
+
+    /* wrap: it wraps the items in cross axis direction */
+    /* flex-wrap: wrap; */
+
+    /* wrap-reverse : it wraps the items in opposite direction of cross axis direction */
+    flex-wrap: wrap-reverse;
+}
+
+.box {
+    width: 33.33333%;
 }
