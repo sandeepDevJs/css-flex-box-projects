@@ -247,5 +247,10 @@ input::-moz-focus-inner {
 .container {
     display: flex;
     border: 10px solid goldenrod;
-    height: 100vh;
+    min-height: 100vh;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    flex-direction: column-reverse;
+
 }
