@@ -246,8 +246,6 @@ input::-moz-focus-inner {
 /* We start writing out flexbox here. The above is just page setup */
 .container {
     display: flex;
-    flex-direction: column;
-    height: 400vh;
 
     /* default */
     /* justify-content: flex-start; */
@@ -261,5 +259,9 @@ input::-moz-focus-inner {
     /* gives space between each item */
     /* justify-content: space-between; */
 
-    justify-content: space-around;
+    /* gives space around each items */
+    /* justify-content: space-around; */
+
+    /* evenly devides spaces between each spaces */
+    justify-content: space-evenly;
 }
