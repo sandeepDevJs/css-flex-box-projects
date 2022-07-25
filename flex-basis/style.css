@@ -246,16 +246,13 @@ input::-moz-focus-inner {
 /* We start writing out flexbox here. The above is just page setup */
 .container {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .box2 {
+    flex-grow: 3;
 
-    /* flex-grow: 1; */
+    /* flex-shrink default is 1 */
 
-    /* flex basis defines the initial width of the item */
-    /* it acts as min-width and max-width */
-    /* when flex-grow is enabled then it will acts as min-width */
-    /* else acts as max-width */
-    flex-basis: 100px;
+    /* box 2 will shrink 3 times than the rest of the boxes when there isn’t enough space on the row.*/
+    flex-shrink: 23;
 }
