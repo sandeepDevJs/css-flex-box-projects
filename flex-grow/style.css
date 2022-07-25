@@ -248,11 +248,10 @@ input::-moz-focus-inner {
     display: flex;
 }
 
-.box {
-    /* Every Box will evenly take the space to the full width of the container */
-    flex: 1;
-}
-
 .box2 {
-    flex: 2;
+
+    /* flex-grow default is 0 */
+
+    /* box 2 will be 3 times wider than the rest of the boxes */
+    flex-grow: 3;
 }
